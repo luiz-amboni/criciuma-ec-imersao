@@ -31,8 +31,16 @@ async function buscarDados() {
             return; // Interrompe se houver erro.
         }
     }
+
     // Normaliza o termo de busca (minúsculas e sem acentos).
     const termoBusca = removerAcentos(campoBusca.value.toLowerCase());
+
+    // Adiciona ou remove uma classe para mudar o layout com base na busca.
+    if (termoBusca.trim() !== '') {
+        cardContainer.classList.add('search-results');
+    } else {
+        cardContainer.classList.remove('search-results');
+    }
     // Filtra os dados verificando se o termo de busca aparece no título ou na descrição.
     const dadosFiltrados = dados.filter(dado => removerAcentos(dado.titulo.toLowerCase()).includes(termoBusca) || removerAcentos(dado.descricao.toLowerCase()).includes(termoBusca));
     renderizarCards(dadosFiltrados);
