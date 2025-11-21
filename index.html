@@ -3,36 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias do Criciúma E.C.</title>
     <link rel="stylesheet" href="style.css">
-    <title>Criciúma E.C.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <header>
-        <h1> Criciúma E.C.</h1>
+            <h1>Notícias do Criciúma E.C.</h1>
+        </div>
         <div>
-            <input type="text" placeholder="O que você quer saber sobre o Criciúma E.C.">
-            <button id="botao-busca" onclick="buscarDados()">Buscar</button>
+            <input type="search" id="caixa-busca" placeholder="Buscar notícias do Tigrão...">
+            <button id="botao-busca">Buscar</button>
         </div>
     </header>
 
     <main>
         <section class="card-container">
-            <!-- <article class="card">
-                <h2>Sobre o Clube</h2>
-                <p>Conheça mais da história do Criciúma E.C.</p>
-                <a href="https://www.criciuma.com.br/" target="_blank">Ver mais</a>
-            </article>
-            <article class="card">
-                <h2>Notícias Recentes</h2>
-                <p>Fique por dentro das últimas notícias e atualizações sobre o Criciúma E.C.</p>
-                <a href="https://www.criciuma.com.br/" target="_blank">Ver mais</a>
-            </article>
-            <article class="card">
-                <h2>Histórico de partidas</h2>
-                <p>Veja o resultado das últimas partidas disputadas pelo Clube.</p>
-                <a href="https://www.criciuma.com.br/" target="_blank">Ver mais</a>
-            </article> -->
+            <!-- Os cards de notícias são inseridos aqui dinamicamente pelo script.js -->
         </section>
     </main>
 
@@ -41,9 +29,9 @@
             Brasil
         </div>
         <ul class="footer-links">
-            <li><a href="https://www.linkedin.com/in/luiz-otavio-a-892a0a122/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-            <li><a href="https://github.com/luiz-amboni" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.instagram.com/amboniii/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/luiz-otavio-a-892a0a122/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="https://github.com/luiz-amboni" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.instagram.com/amboniii/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
         </ul>
     </footer>
     <script src="script.js"></script>

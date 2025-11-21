@@ -1,7 +1,72 @@
+// --- SELEÇÃO DE ELEMENTOS E VARIÁVEIS GLOBAIS ---
+// Seleciona os elementos do HTML que serão manipulados pelo script.
+let cardContainer = document.querySelector(".card-container");
+let campoBusca = document.querySelector("Header input");
+let botaoBusca = document.querySelector("#botao-busca");
+// Array que guardará os dados carregados do data.json para evitar recarregamentos.
 let dados = [];
 
-async function buscarDados() {
-    let resposta = await fetch("data.json");
-    dados = await resposta.json();
-    console.log(dados); 
+// --- FUNÇÕES ---
+
+/**
+ * Remove acentos de uma string para facilitar a busca.
+ * Ex: "história" se torna "historia".
+ */
+function removerAcentos(texto) {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
+
+/**
+ * Função principal que carrega os dados (se necessário),
+ * filtra os resultados com base na busca do usuário e chama a renderização.
+ */
+async function buscarDados() {
+    // Carrega os dados do arquivo JSON apenas na primeira vez que a função é executada.
+    if (dados.length === 0) {
+        try {
+            let resposta = await fetch("data.json");
+            dados = await resposta.json();
+        } catch (error) {
+            console.log("Falha ao carregar dados:", error);
+            return; // Interrompe se houver erro.
+        }
+    }
+    // Normaliza o termo de busca (minúsculas e sem acentos).
+    const termoBusca = removerAcentos(campoBusca.value.toLowerCase());
+    // Filtra os dados verificando se o termo de busca aparece no título ou na descrição.
+    const dadosFiltrados = dados.filter(dado => removerAcentos(dado.titulo.toLowerCase()).includes(termoBusca) || removerAcentos(dado.descricao.toLowerCase()).includes(termoBusca));
+    renderizarCards(dadosFiltrados);
+}
+
+/**
+ * Limpa a tela e exibe os cards correspondentes aos dados fornecidos.
+ */
+function renderizarCards(dados) {
+    cardContainer.innerHTML = ""; // Limpa os cards antigos.
+    // Cria e adiciona um novo card no container para cada item nos dados.
+    for (let dado of dados) {
+        let article = document.createElement("article");
+        article.classList.add("card");
+        article.innerHTML = `
+            <h2>${dado.titulo}</h2>
+            <p>${dado.descricao}</p>
+            <a href="${dado.link}" target="_blank">Ver mais</a>
+        `
+        cardContainer.appendChild(article);
+    }
+}
+
+// --- EVENTOS ---
+
+// Adiciona um evento de clique ao botão de busca para chamar a função buscarDados.
+botaoBusca.addEventListener("click", buscarDados);
+
+// Adiciona um evento que escuta as teclas pressionadas no campo de busca.
+campoBusca.addEventListener("keydown", function(event) {
+    // Se a tecla pressionada for "Enter", a função de busca é chamada.
+    if (event.key === "Enter") {
+        buscarDados();
+    }
+});
+// Chama a função buscarDados assim que o script é carregado para exibir os cards iniciais.
+buscarDados();

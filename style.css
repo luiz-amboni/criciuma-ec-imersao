@@ -5,16 +5,16 @@
 }
 
 :root {
-    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --primary-color: #fdd100; /* Amarelo Criciúma */
+    --secondary-color: #fff; /* Branco */
+    --tertiary-color: #a9a9a9; /* Cinza para placeholders e detalhes */
+    --bg-color: #000; /* Preto */
 }
 
 body {
     margin: 0; /* Remove a margem padrão do body */
     background: var(--bg-color); /* Define a cor de fundo usando uma variável */
-    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão */
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
 }
 
@@ -26,7 +26,7 @@ header {
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
     background: var(--bg-color); /* Cor de fundo do cabeçalho */
-    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    z-index: 10; /* Garante que o header fique sobre outros elementos */
     border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
@@ -59,8 +59,8 @@ div input::placeholder {
 
 div input:focus {
     outline: none; /* Remove a borda de foco padrão */
-    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
-    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+    border-color: var(--primary-color); /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa para indicar foco */
 }
 
 #botao-busca {
@@ -73,14 +73,14 @@ div input:focus {
     font-size: 1rem; /* Tamanho da fonte */
     white-space: nowrap; /* Impede a quebra de linha do texto */
     transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
+    background-color: transparent;
     color: var(--secondary-color); /* Cor do texto */
-    border: 1px solid var(--bg-color); /* Adiciona uma borda */
+    border: 1px solid var(--tertiary-color); /* Adiciona uma borda */
 }
 
 #botao-busca:hover {
-    background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
-    color: var(--bg-color); /* Muda a cor do texto ao passar o mouse */
+    background-color: var(--primary-color); /* Amarelo no hover */
+    color: var(--bg-color); /* Texto preto no hover */
     box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
 }
 
@@ -104,7 +104,7 @@ article {
     margin-bottom: 1.25rem; /* Margem inferior */
     box-shadow: none; /* Sem sombra */
     transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
-    border-bottom: 1px solid var(--bg-color); /* Borda inferior */
+    border-bottom: 1px solid #222; /* Borda inferior sutil */
     padding-bottom: 1.5rem; /* Espaçamento interno inferior */
 }
 
@@ -153,7 +153,7 @@ article a:hover {
     width: 100%; /* Largura total */
     color: var(--tertiary-color); /* Cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
-    padding: 15px 20px; /* Espaçamento interno */
+    padding: 1rem 1.25rem; /* Espaçamento interno */
     border-top: 1px solid #3c4043; /* Borda superior */
     font-size: 0.8rem; /* Tamanho da fonte */
 }
@@ -171,6 +171,11 @@ article a:hover {
     gap: 15px; /* Espaçamento entre os links */
 }
 
+.footer-links i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+
 .footer-links a {
     color: var(--secondary-color); /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
@@ -178,7 +183,7 @@ article a:hover {
 }
 
 .footer-links a:hover {
-    color: var(--primary-color); /* Muda a cor do link ao passar o mouse (variável alterada para uma cor existente) */
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse */
 }
 
 @media (max-width: 768px) {
@@ -186,6 +191,12 @@ article a:hover {
         flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
         padding: 1rem; /* Reduz o espaçamento interno */
     }
+
+    .header-title { /* Estilos para o h1 no cabeçalho em telas menores */
+        justify-content: center;
+        padding: 1rem; /* Reduz o espaçamento interno */
+    }
+
 
     header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
         text-align: center; /* Centraliza o texto */
@@ -204,6 +215,7 @@ article a:hover {
     article:hover { /* Estilos para o article em telas menores */
         transform: none; /* Remove o efeito de escala ao passar o mouse */
     }
+
 }
 
 @media (max-width: 480px) {
