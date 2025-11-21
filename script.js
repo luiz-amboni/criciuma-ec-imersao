@@ -76,5 +76,31 @@ campoBusca.addEventListener("keydown", function(event) {
         buscarDados();
     }
 });
+
+// --- ESTILOS DINÂMICOS ---
+
+/**
+ * Adiciona estilos CSS na página para o efeito de hover nos cards.
+ * Esta é uma alternativa para quando não se tem um arquivo CSS separado.
+ */
+function adicionarEstilosHover() {
+    const style = document.createElement('style');
+    style.textContent = `
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        .card:hover {
+            background-color: #FFD700; /* Amarelo original vibrante */
+            color: #000000; /* Deixa TODO o texto preto para máximo contraste */
+            transform: translateY(-5px); /* Efeito de levantar o card */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+        }
+        .card:hover a, .card:hover h2 {
+            color: #000000; /* Garante que título e link também fiquem pretos */
+        }
+    `;
+    document.head.appendChild(style);
+}
 // Chama a função buscarDados assim que o script é carregado para exibir os cards iniciais.
 buscarDados();
+adicionarEstilosHover();

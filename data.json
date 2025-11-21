@@ -7,7 +7,7 @@
     {
         "titulo": "Notícias recentes",
         "descricao": "Últimas notícias e atualizações sobre o Criciúma Esporte Clube, incluindo resultados de jogos, transferências de jogadores e eventos do clube.",
-        "link": "https://www.criciuma.com.br/noticias"
+        "link": "https://www.criciuma.com.br/noticias/ultimas-noticias"
     },
     {
         "titulo": "Calendário de jogos",
@@ -22,12 +22,12 @@
     {
         "titulo": "Estádio Heriberto Hülse",
         "descricao": "Descubra tudo sobre o Majestoso, a casa do Tigre. Informações sobre a história, capacidade, estrutura e como foram os jogos memoráveis do estádio. [1, 3, 4, 6, 8, 9]",
-        "link": "https://www.criciuma.com.br/o-clube/heriberto-hulse"
+        "link": "https://www.criciuma.com.br/estrutura/heriberto-hulse"
     },
     {
         "titulo": "Programa de sócio-torcedor",
         "descricao": "Saiba como se tornar um sócio-torcedor do Criciúma, conheça os planos disponíveis, as vantagens e como fazer a sua adesão para ajudar o clube e ter benefícios exclusivos. [29, 30]",
-        "link": "https://www.criciuma.com.br/socios"
+        "link": "https://login.minhaentrada.com.br/planos/criciuma"
     },
     {
         "titulo": "Loja Oficial - Tigre Maníacos",
@@ -42,6 +42,6 @@
     {
         "titulo": "História do Clube",
         "descricao": "Explore a trajetória do Criciúma Esporte Clube desde a sua fundação como Comerciário, a mudança de cores e nome, até as grandes conquistas que marcaram sua história. [2, 5, 11]",
-        "link": "https://www.criciuma.com.br/o-clube/historia"
+        "link": "https://www.criciuma.com.br/historia"
     }
 ]
