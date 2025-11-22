@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.criciuma.com.br/uploads/institutional/logo/20230304183351-g-6403c8bf9d320.png" alt="Logo do Criciúma E.C." width="150"/>
+  <img src="images/logo.svg" alt="Logo do Criciúma E.C." width="150"/>
   <h1>Portal de Busca do Criciúma E.C.</h1>
   <p>Projeto desenvolvido para a Imersão Dev da Alura em parceria com o Google.</p>
 
