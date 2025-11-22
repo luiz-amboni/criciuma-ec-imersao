@@ -1,47 +1,342 @@
 [
-    {
-        "titulo": "Sobre o clube",
-        "descricao": "Informações detalhadas sobre a história, conquistas e estrutura do clube de futebol Criciúma Esporte Clube.",
-        "link": "https://www.criciuma.com.br/sobre-o-clube"
-    },
-    {
-        "titulo": "Notícias recentes",
-        "descricao": "Últimas notícias e atualizações sobre o Criciúma Esporte Clube, incluindo resultados de jogos, transferências de jogadores e eventos do clube.",
-        "link": "https://www.criciuma.com.br/noticias/ultimas-noticias"
-    },
-    {
-        "titulo": "Calendário de jogos",
-        "descricao": "Agenda completa dos próximos jogos do Criciúma Esporte Clube, incluindo datas, horários e locais das partidas.",
-        "link": "https://www.criciuma.com.br/calendario-de-jogos"
-    },
-    {
-        "titulo": "Elenco profissional",
-        "descricao": "Conheça os jogadores que compõem o elenco profissional do Criciúma E.C. na temporada atual, com informações e fichas técnicas de cada atleta. [31, 33]",
-        "link": "https://www.criciuma.com.br/elenco-profissional"
-    },
-    {
-        "titulo": "Estádio Heriberto Hülse",
-        "descricao": "Descubra tudo sobre o Majestoso, a casa do Tigre. Informações sobre a história, capacidade, estrutura e como foram os jogos memoráveis do estádio. [1, 3, 4, 6, 8, 9]",
-        "link": "https://www.criciuma.com.br/estrutura/heriberto-hulse"
-    },
-    {
-        "titulo": "Programa de sócio-torcedor",
-        "descricao": "Saiba como se tornar um sócio-torcedor do Criciúma, conheça os planos disponíveis, as vantagens e como fazer a sua adesão para ajudar o clube e ter benefícios exclusivos. [29, 30]",
-        "link": "https://login.minhaentrada.com.br/planos/criciuma"
-    },
-    {
-        "titulo": "Loja Oficial - Tigre Maníacos",
-        "descricao": "Encontre os uniformes de jogo, roupas casuais, acessórios e diversos produtos licenciados do Criciúma E.C. na loja oficial do clube. [17, 18, 23]",
-        "link": "https://www.tigremaniacos.com.br/"
-    },
-    {
-        "titulo": "Categorias de Base",
-        "descricao": "Acompanhe o desenvolvimento dos futuros talentos do Tigre. Notícias, resultados e informações sobre as equipes de base do Criciúma. [13, 14, 15, 19, 22, 24, 25, 26, 27]",
-        "link": "https://www.criciuma.com.br/futebol/categorias-de-base"
-    },
-    {
-        "titulo": "História do Clube",
-        "descricao": "Explore a trajetória do Criciúma Esporte Clube desde a sua fundação como Comerciário, a mudança de cores e nome, até as grandes conquistas que marcaram sua história. [2, 5, 11]",
-        "link": "https://www.criciuma.com.br/historia"
-    }
+  {
+    "titulo": "Sobre o clube",
+    "descricao": "Informações detalhadas sobre a história, conquistas e estrutura do clube de futebol Criciúma Esporte Clube.",
+    "link": "https://www.criciuma.com.br/sobre-o-clube",
+    "tags": [
+      "institucional",
+      "história",
+      "clube"
+    ]
+  },
+  {
+    "titulo": "Notícias recentes",
+    "descricao": "Últimas notícias e atualizações sobre o Criciúma Esporte Clube, incluindo resultados de jogos, transferências de jogadores e eventos do clube.",
+    "link": "https://www.criciuma.com.br/noticias/ultimas-noticias",
+    "tags": [
+      "notícias",
+      "jogos",
+      "atualidades"
+    ]
+  },
+  {
+    "titulo": "Calendário de jogos",
+    "descricao": "Agenda completa dos próximos jogos do Criciúma Esporte Clube, incluindo datas, horários e locais das partidas.",
+    "link": "https://www.criciuma.com.br/calendario-de-jogos",
+    "tags": [
+      "jogos",
+      "calendário",
+      "partidas"
+    ]
+  },
+  {
+    "titulo": "Elenco profissional",
+    "descricao": "Conheça os jogadores que compõem o elenco profissional do Criciúma E.C. na temporada atual, com informações e fichas técnicas de cada atleta.",
+    "link": "https://www.criciuma.com.br/elenco-profissional",
+    "tags": [
+      "elenco",
+      "jogadores",
+      "time"
+    ]
+  },
+  {
+    "titulo": "Estádio Heriberto Hülse",
+    "descricao": "Descubra tudo sobre o Majestoso, a casa do Tigre. Informações sobre a história, capacidade, estrutura e jogos memoráveis do estádio.",
+    "link": "https://www.criciuma.com.br/estrutura/heriberto-hulse",
+    "tags": [
+      "estádio",
+      "estrutura",
+      "majestoso"
+    ]
+  },
+  {
+    "titulo": "Programa de sócio-torcedor",
+    "descricao": "Saiba como se tornar um sócio-torcedor do Criciúma, conheça os planos disponíveis, as vantagens e como fazer a sua adesão para ajudar o clube.",
+    "link": "https://login.minhaentrada.com.br/planos/criciuma",
+    "tags": [
+      "sócio-torcedor",
+      "torcida",
+      "planos"
+    ]
+  },
+  {
+    "titulo": "Loja Oficial - Tigre Maníacos",
+    "descricao": "Encontre os uniformes de jogo, roupas casuais, acessórios e diversos produtos licenciados do Criciúma E.C. na loja oficial do clube.",
+    "link": "https://www.tigremaniacos.com.br/",
+    "tags": [
+      "loja",
+      "produtos",
+      "tigre maníacos"
+    ]
+  },
+  {
+    "titulo": "Categorias de Base",
+    "descricao": "Acompanhe o desenvolvimento dos futuros talentos do Tigre. Notícias, resultados e informações sobre as equipes de base do Criciúma.",
+    "link": "https://www.criciuma.com.br/futebol/categorias-de-base",
+    "tags": [
+      "base",
+      "futebol de base",
+      "talentos"
+    ]
+  },
+  {
+    "titulo": "História do Clube",
+    "descricao": "Explore a trajetória do Criciúma Esporte Clube desde a sua fundação, a mudança de cores e nome, até as grandes conquistas que marcaram sua história.",
+    "link": "https://www.criciuma.com.br/historia",
+    "tags": [
+      "história",
+      "conquistas",
+      "fundação"
+    ]
+  },
+  {
+    "titulo": "Conquista da Copa do Brasil de 1991",
+    "descricao": "Detalhes sobre a épica campanha que culminou no único título nacional de elite do clube, sob o comando de Felipão.",
+    "link": "https://www.criciuma.com.br/historia/copa-do-brasil-91",
+    "tags": [
+      "titulos",
+      "historia",
+      "glorias"
+    ]
+  },
+  {
+    "titulo": "A Participação na Taça Libertadores da América de 1992",
+    "descricao": "Análise da campanha internacional do Tigre em 1992, chegando às quartas de final após eliminar o Sporting Cristal e enfrentar o São Paulo.",
+    "link": "https://www.conmebol.com/libertadores/criciuma-1992",
+    "tags": [
+      "internacional",
+      "historia",
+      "jogos"
+    ]
+  },
+  {
+    "titulo": "O Título da Série B de 2002",
+    "descricao": "Informações sobre a conquista do Campeonato Brasileiro Série B, um marco que garantiu o retorno à primeira divisão nacional.",
+    "link": "https://www.criciuma.com.br/titulos/serie-b-2002",
+    "tags": [
+      "titulos",
+      "acesso",
+      "nacional"
+    ]
+  },
+  {
+    "titulo": "Grandes Ídolos da História Tricolor",
+    "descricao": "Perfis e estatísticas dos jogadores mais emblemáticos que vestiram a camisa do Criciúma, como De Lucca, Gelson e Jairo Lenzi.",
+    "link": "https://www.criciuma.com.br/idolos",
+    "tags": [
+      "jogadores",
+      "historia",
+      "personalidades"
+    ]
+  },
+  {
+    "titulo": "O Clássico Carvoeiro: Rivalidade Regional",
+    "descricao": "Histórico dos confrontos mais acirrados do Criciúma contra seus principais adversários catarinenses, como Avaí e Figueirense.",
+    "link": "https://ge.globo.com/sc/futebol/criciuma/classico-carvoeiro-historico",
+    "tags": [
+      "rivalidades",
+      "jogos",
+      "estadual"
+    ]
+  },
+  {
+    "titulo": "Fundação do Comerciário Esporte Clube (1947)",
+    "descricao": "Documentação sobre a origem do clube, fundado inicialmente como Comerciário, e sua posterior transformação em Criciúma E.C.",
+    "link": "https://www.criciuma.com.br/institucional/fundacao",
+    "tags": [
+      "institucional",
+      "origem",
+      "historia"
+    ]
+  },
+  {
+    "titulo": "O CT Antenor Angeloni e Estrutura",
+    "descricao": "Detalhes sobre o Centro de Treinamento utilizado pelo clube, um dos mais modernos de Santa Catarina.",
+    "link": "https://www.criciuma.com.br/estrutura/ct-angeloni",
+    "tags": [
+      "estrutura",
+      "treinamento",
+      "institucional"
+    ]
+  },
+  {
+    "titulo": "Recordes de Público no Majestoso",
+    "descricao": "Lista e contexto dos jogos que registraram as maiores assistências da história do Estádio Heriberto Hülse.",
+    "link": "https://www.fcf.com.br/estatisticas/criciuma-publico",
+    "tags": [
+      "estadio",
+      "dados",
+      "jogos"
+    ]
+  },
+  {
+    "titulo": "Títulos do Campeonato Catarinense",
+    "descricao": "Revisão de todas as conquistas do Campeonato Estadual, detalhando as campanhas mais memoráveis do Tigre.",
+    "link": "https://www.criciuma.com.br/titulos/catarinense",
+    "tags": [
+      "titulos",
+      "estadual",
+      "historia"
+    ]
+  },
+  {
+    "titulo": "Maiores Goleadores da História do Criciúma",
+    "descricao": "Ranking dos principais artilheiros do clube em todas as competições, com destaque para seus recordes.",
+    "link": "https://www.criciuma.com.br/estatisticas/artilheiros",
+    "tags": [
+      "estatisticas",
+      "jogadores",
+      "dados"
+    ]
+  },
+  {
+    "titulo": "O Hino Oficial do Clube e Suas Origens",
+    "descricao": "A letra, a melodia e o contexto histórico da criação do hino que embala a torcida tricolor.",
+    "link": "https://www.criciuma.com.br/institucional/hino-oficial",
+    "tags": [
+      "cultura",
+      "institucional",
+      "historia"
+    ]
+  },
+  {
+    "titulo": "Transparência e Prestação de Contas",
+    "descricao": "Acesso aos relatórios financeiros e documentos de governança do Criciúma E.C., visando a transparência na gestão.",
+    "link": "https://www.criciuma.com.br/governanca/transparencia",
+    "tags": [
+      "gestao",
+      "institucional",
+      "financas"
+    ]
+  },
+  {
+    "titulo": "O Papel da Torcida Organizada Os Tigres",
+    "descricao": "Histórico, ações e o impacto da principal torcida organizada do Criciúma nos jogos dentro e fora de casa.",
+    "link": "https://torcidasorganizadas.com.br/criciuma-os-tigres",
+    "tags": [
+      "torcida",
+      "cultura",
+      "apoio"
+    ]
+  },
+  {
+    "titulo": "Títulos e Participações na Copa Sul-Americana",
+    "descricao": "Revisão das raras, mas importantes, participações do Criciúma na segunda competição mais importante da CONMEBOL.",
+    "link": "https://www.criciuma.com.br/copa-sul-americana",
+    "tags": [
+      "titulos",
+      "internacional",
+      "jogos"
+    ]
+  },
+  {
+    "titulo": "Jogadores Revelados e Vendidos Recentemente",
+    "descricao": "Análise das principais negociações e dos talentos formados na base que renderam lucros significativos ao clube nos últimos anos.",
+    "link": "https://www.transfermarkt.com.br/criciuma/transferencias/recentes",
+    "tags": [
+      "mercado",
+      "jogadores",
+      "base"
+    ]
+  },
+  {
+    "titulo": "A Campanha de Acesso à Série A em 2023",
+    "descricao": "Retrospectiva detalhada da campanha que levou o Criciúma de volta à elite do futebol brasileiro após dez anos.",
+    "link": "https://ge.globo.com/sc/futebol/criciuma/acesso-2023",
+    "tags": [
+      "acesso",
+      "serie-a",
+      "noticias"
+    ]
+  },
+  {
+    "titulo": "Presidentes Mais Marcantes na História",
+    "descricao": "Perfis dos líderes que comandaram o clube em momentos de glória e reestruturação, como Antenor Angeloni e Vilmar Guedes.",
+    "link": "https://www.criciuma.com.br/institucional/presidentes",
+    "tags": [
+      "gestao",
+      "historia",
+      "institucional"
+    ]
+  },
+  {
+    "titulo": "O Tigre, Mascote Oficial do Criciúma",
+    "descricao": "Informações sobre a criação do mascote, o Tigre, e seu simbolismo para a identidade e força do clube.",
+    "link": "https://www.criciuma.com.br/cultura/mascote",
+    "tags": [
+      "cultura",
+      "simbolo",
+      "institucional"
+    ]
+  },
+  {
+    "titulo": "Estatísticas de Desempenho na Última Temporada",
+    "descricao": "Números e gráficos detalhados sobre gols, assistências, posse de bola e desempenho dos jogadores no último campeonato.",
+    "link": "https://www.criciuma.com.br/estatisticas/temporada-recente",
+    "tags": [
+      "dados",
+      "estatisticas",
+      "jogos"
+    ]
+  },
+  {
+    "titulo": "Departamento de Futebol Feminino",
+    "descricao": "Informações sobre a reativação e o desenvolvimento da modalidade feminina no Criciúma Esporte Clube.",
+    "link": "https://www.criciuma.com.br/futebol-feminino",
+    "tags": [
+      "futebol-feminino",
+      "institucional",
+      "desenvolvimento"
+    ]
+  },
+  {
+    "titulo": "Projetos Sociais e Comunitários do Clube",
+    "descricao": "Descrição das ações de responsabilidade social e iniciativas que o Criciúma promove em benefício da comunidade local.",
+    "link": "https://www.criciuma.com.br/institucional/social",
+    "tags": [
+      "social",
+      "comunidade",
+      "institucional"
+    ]
+  },
+  {
+    "titulo": "Preparação e Logística para Jogos Fora de Casa",
+    "descricao": "Detalhes sobre a organização de viagens, treinamento e alojamento da equipe em partidas disputadas em outras cidades e estados.",
+    "link": "https://www.criciuma.com.br/estrutura/logistica-viagens",
+    "tags": [
+      "estrutura",
+      "treinamento",
+      "logistica"
+    ]
+  },
+  {
+    "titulo": "Os Uniformes Históricos e Terceiras Camisas",
+    "descricao": "Galeria e contexto dos kits de jogo mais icônicos, incluindo os uniformes comemorativos e as terceiras camisas lançadas ao longo dos anos.",
+    "link": "https://www.mantosdofutebol.com.br/criciuma-ec-uniformes-historicos",
+    "tags": [
+      "uniformes",
+      "cultura",
+      "historia"
+    ]
+  },
+  {
+    "titulo": "O Criciúma no Campeonato Brasileiro de Aspirantes",
+    "descricao": "Acompanhamento da equipe sub-23 e sua participação nos torneios de transição, focando no desenvolvimento de jovens talentos.",
+    "link": "https://www.cbf.com.br/futebol-brasileiro/aspirantes/criciuma",
+    "tags": [
+      "base",
+      "sub-23",
+      "desenvolvimento"
+    ]
+  },
+  {
+    "titulo": "Análise Tática do Treinador Atual",
+    "descricao": "Detalhes sobre o esquema tático preferido, a filosofia de jogo e o desempenho do técnico que comanda o time principal atualmente.",
+    "link": "https://ge.globo.com/sc/futebol/criciuma/analise-tecnico-atual",
+    "tags": [
+      "tecnico",
+      "analise",
+      "taticas"
+    ]
+  }
 ]

@@ -171,6 +171,22 @@ article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.card-tags {
+    margin-top: auto; /* Empurra as tags para o final do card */
+    padding-top: 1rem; /* Espaçamento acima das tags */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card-tags span {
+    background-color: #333;
+    color: var(--tertiary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+}
+
 .footer {
     position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
     bottom: 0; /* Alinha na parte inferior */

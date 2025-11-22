@@ -42,7 +42,14 @@ async function buscarDados() {
         cardContainer.classList.remove('search-results');
     }
     // Filtra os dados verificando se o termo de busca aparece no título ou na descrição.
-    const dadosFiltrados = dados.filter(dado => removerAcentos(dado.titulo.toLowerCase()).includes(termoBusca) || removerAcentos(dado.descricao.toLowerCase()).includes(termoBusca));
+    const dadosFiltrados = dados.filter(dado => {
+        const noTitulo = removerAcentos(dado.titulo.toLowerCase()).includes(termoBusca);
+        const naDescricao = removerAcentos(dado.descricao.toLowerCase()).includes(termoBusca);
+        // Verifica se alguma tag corresponde ao termo de busca.
+        const nasTags = dado.tags && dado.tags.some(tag => removerAcentos(tag.toLowerCase()).includes(termoBusca));
+
+        return noTitulo || naDescricao || nasTags;
+    });
     renderizarCards(dadosFiltrados);
 }
 
@@ -55,9 +62,13 @@ function renderizarCards(dados) {
     for (let dado of dados) {
         let article = document.createElement("article");
         article.classList.add("card");
+        // Cria o HTML para as tags, se existirem.
+        const tagsHtml = dado.tags ? `<div class="card-tags">${dado.tags.map(tag => `<span>#${tag}</span>`).join(' ')}</div>` : '';
+
         article.innerHTML = `
             <h2>${dado.titulo}</h2>
             <p>${dado.descricao}</p>
+            ${tagsHtml}
             <a href="${dado.link}" target="_blank">Ver mais</a>
         `
         cardContainer.appendChild(article);
