@@ -30,24 +30,25 @@ O objetivo foi aplicar conceitos de desenvolvimento web front-end utilizando HTM
 
 O projeto foi construído com as seguintes tecnologias:
 
-!HTML5
-!CSS3
-!JavaScript
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 
 ---
 
 ## 🛠️ Como Executar
 
-Como este é um projeto front-end estático, você não precisa de um servidor complexo para executá-lo. Siga os passos abaixo:
+Como este é um projeto front-end estático, você não precisa de um servidor para executá-lo. Siga os passos abaixo:
 
 1.  **Clone o repositório:**
+    *Substitua `seu-usuario` pelo seu nome de usuário do GitHub.*
     ```bash
-    git clone https://github.com/seu-usuario/criciuma-ec-imersao.git
+    git clone https://github.com/seu-usuario/criciuma-e-c.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
     ```bash
-    cd criciuma-ec-imersao
+    cd criciuma-e-c
     ```
 
 3.  **Abra o arquivo `index.html` no seu navegador de preferência.**
